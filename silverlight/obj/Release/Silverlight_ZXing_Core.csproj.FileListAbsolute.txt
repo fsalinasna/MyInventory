@@ -1,0 +1,5 @@
+D:\Code\HG_SilverlightZXing\silverlight\Bin\Release\Silverlight_ZXing_Core.dll
+D:\Code\HG_SilverlightZXing\silverlight\Bin\Release\Silverlight_ZXing_Core.pdb
+D:\Code\HG_SilverlightZXing\silverlight\obj\Release\ResolveAssemblyReference.cache
+D:\Code\HG_SilverlightZXing\silverlight\obj\Release\Silverlight_ZXing_Core.dll
+D:\Code\HG_SilverlightZXing\silverlight\obj\Release\Silverlight_ZXing_Core.pdb

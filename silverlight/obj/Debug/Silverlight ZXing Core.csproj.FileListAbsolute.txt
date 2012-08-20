@@ -1,0 +1,10 @@
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\silverlight\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\silverlight\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\silverlight\obj\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\silverlight\obj\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\silverlight\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\silverlight\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\silverlight\obj\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\silverlight\obj\Debug\Silverlight_ZXing_Core.pdb

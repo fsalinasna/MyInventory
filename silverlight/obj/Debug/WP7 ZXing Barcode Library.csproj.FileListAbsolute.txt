@@ -1,0 +1,8 @@
+D:\Code\HG_SilverlightZXing\silverlight\Bin\Debug\LICENSE-Apache-2.0.txt
+D:\Code\HG_SilverlightZXing\silverlight\Bin\Debug\WP7_Barcode_Library.dll
+D:\Code\HG_SilverlightZXing\silverlight\Bin\Debug\WP7_Barcode_Library.pdb
+D:\Code\HG_SilverlightZXing\silverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\Code\HG_SilverlightZXing\silverlight\obj\Debug\WP7Code\BarcodePhotoChooser.g.i.cs
+D:\Code\HG_SilverlightZXing\silverlight\obj\Debug\WP7_Barcode_Library.g.resources
+D:\Code\HG_SilverlightZXing\silverlight\obj\Debug\WP7_Barcode_Library.dll
+D:\Code\HG_SilverlightZXing\silverlight\obj\Debug\WP7_Barcode_Library.pdb

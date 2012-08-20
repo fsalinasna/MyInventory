@@ -1,0 +1,9 @@
+﻿This is a wrapper for the Silverlight_ZXing_Core library that includes Windows Phone 7 specific code.
+For more details see http://silverlightzxing.codeplex.com/
+
+The Samples folder includes files that must be copied to the parent project so that they are accessible as content in the application XAP.
+
+The Other folder has code for loading images on a background thread and code for the tilt-effect used when selecting items from the sample list
+
+TODO:
+-Seprate generic threading and utility code out of WP7Manager class and into a seprate project

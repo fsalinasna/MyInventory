@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WP7_Barcode_Library.BarcodePhotoChooser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WP7_Common_Code.ControlTiltEffect;assembly=WP7_Barcode_Library"
+    xmlns:delay="clr-namespace:WP7_Common_Code.Delay;assembly=WP7_Barcode_Library"
+    local:TiltEffect.IsTiltEnabled="True"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--
+    /* NOTE: since the BarcodePhotoChooser.xaml file is in a reference assembly you must use the following code to navigate to it:
+     * UPDATE: See BarcodeChooserURI property for a static reference to the BarcodePhotoChooser.xaml uri
+     * NavigationService.Navigate(BarcodeSampleItemManager.BarcodeChooserURI);
+     * See http://www.davidpoll.com/2009/07/12/silverlight-3-navigation-navigating-to-pages-in-referenced-assemblies/ for more information
+     */
+    -->
+    
+    <phone:PhoneApplicationPage.Resources>
+        <local:BarcodeSampleItemManager xmlns:local ="clr-namespace:WP7_Barcode_Library" x:Key="LocalBarcodeSampleItemManager" />
+    </phone:PhoneApplicationPage.Resources>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" DataContext="{Binding Source={StaticResource LocalBarcodeSampleItemManager}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <!--ContentPanel - place additional content here-->
+        <TextBlock Grid.Row="0" x:Name="PageTitle" Text="Sample Barcodes" Margin="20,10,0,15" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" />
+        <ListBox Grid.Row="1" ItemsSource="{Binding Path=Items}" Name="lbSamples" SelectionChanged="lbSamples_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                <Border BorderThickness="2" BorderBrush="{StaticResource PhoneForegroundBrush}" Margin="10,5,10,5" CornerRadius="5" Visibility="{Binding Path=Visible}">
+                        <Border.Background>
+                            <SolidColorBrush Color="{StaticResource PhoneForegroundColor}" Opacity=".20"/>
+                        </Border.Background>
+                        <Grid Width="430" Height="120">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="220" />
+                                <ColumnDefinition Width="*"  />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Image Margin="10,10,10,10" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" delay:LowProfileImageLoader.UriSource="{Binding Path=FileURI}" />
+                            <TextBlock Grid.Column="1" Margin="0,-7,0,0" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding Text}" TextWrapping="Wrap" FontSize="26"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</phone:PhoneApplicationPage>

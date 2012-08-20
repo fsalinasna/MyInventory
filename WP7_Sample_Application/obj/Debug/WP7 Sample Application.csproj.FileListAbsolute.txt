@@ -1,0 +1,110 @@
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\App.g.i.cs
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\MainPage.g.i.cs
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.g.resources
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\code128-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\code39-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\datamatrix-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\datamatrix-2.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\ean13-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\fail-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\fail-2.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\fail-3.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\fail-4.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\itf-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Notes.txt
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\pdf417-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode-1.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode_blog.phrasememe.com.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode-2.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode-3.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\qrcode-4.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Blu-ray.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Book_1.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Book_2.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_CD.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Email.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Facebook_URL.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Geo-Location.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Phone_Number.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Product_1.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Product_2.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_SMS.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Text.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Times-Ad.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Twitter_URL.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Video_Game.jpg
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\Sample_Wifi_Network.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Samples\upca-1.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\ApplicationIcon.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Background.png
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Documentation.chm
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\SampleImages.xml
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.pdb
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\WP7_Barcode_Library.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\WP7_Barcode_Library.pdb
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.pdb
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\AppManifest.xaml
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.xap
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\fsalinas\Downloads\silverlightzxing-3bd7fb2d5eb2\WP7_Sample_Application\obj\Debug\XapCacheFile.xml
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\code128-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\code39-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\datamatrix-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\datamatrix-2.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\ean13-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\fail-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\fail-2.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\fail-3.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\fail-4.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\itf-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Notes.txt
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\pdf417-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode-1.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode_blog.phrasememe.com.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode-2.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode-3.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\qrcode-4.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Blu-ray.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Book_1.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Book_2.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_CD.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Email.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Facebook_URL.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Geo-Location.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Phone_Number.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Product_1.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Product_2.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_SMS.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Text.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Times-Ad.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Twitter_URL.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Video_Game.jpg
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\Sample_Wifi_Network.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Samples\upca-1.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\ApplicationIcon.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Background.png
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Documentation.chm
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\SampleImages.xml
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\AppManifest.xaml
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\WP7_Sample_Application.xap
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\WP7_Barcode_Library.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\Bin\Debug\WP7_Barcode_Library.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\App.g.i.cs
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\MainPage.g.i.cs
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.g.resources
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.dll
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\WP7_Sample_Application.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\WP7_Sample_Application\obj\Debug\XapCacheFile.xml

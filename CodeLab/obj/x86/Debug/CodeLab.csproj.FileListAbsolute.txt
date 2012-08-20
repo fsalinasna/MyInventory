@@ -1,0 +1,6 @@
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\bin\Debug\CodeLab.exe
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\bin\Debug\CodeLab.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\obj\x86\Debug\CodeLab.exe
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\obj\x86\Debug\CodeLab.pdb
+C:\Users\fsalinas\Documents\Visual Studio 2010\Projects\PersonalInventory\CodeLab\bin\Debug\CodeLab.exe.config

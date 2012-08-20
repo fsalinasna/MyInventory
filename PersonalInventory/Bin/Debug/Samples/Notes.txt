@@ -1,0 +1,5 @@
+﻿This folder contains sample images from the zxing library and other images that I took to include in the PhraseMeme Scanner application.
+
+All of the other files are used by the BarcodeSampleChooser.xaml page and should be stored in the parent project as content files in the xap.
+
+These files should then be referenced by the SampleImages.xml file (also stored as a content file in the parent project) so that they can be accessed by the BarcodeSampleItemManager.cs class.

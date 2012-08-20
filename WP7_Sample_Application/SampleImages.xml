@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Set sample images for BarcodePhotoChooser.xaml list
+  These files should be stored in the parent project as content files not resource files and should always start with a /
+  Text can use &#13;&#10; for a new line or &amp; for &, but will start wrapping automatically after 15 characters and should not be more than 3 lines long.
+  Also keep the file sizes and number of samples small to enable quick load times.-->
+<SampleImages>
+  <!--You can add photos captured from camera and transfered to your computer using the zune software here (helpful for testing)
+  <Sample isEnabled="true" Text="WP Sample 1" FilePath="/Samples/WP_000004.jpg"/>
+  <Sample isEnabled="true" Text="WP Sample 2" FilePath="/Samples/WP_000005.jpg"/>
+  <Sample isEnabled="true" Text="WP Sample 3" FilePath="/Samples/WP_000006.jpg"/>
+  <Sample isEnabled="true" Text="WP Sample 4" FilePath="/Samples/WP_000009.jpg"/>
+  <Sample isEnabled="true" Text="WP Sample 5" FilePath="/Samples/WP_000019.jpg"/>
+  <Sample isEnabled="true" Text="WP Sample 6" FilePath="/Samples/WP_000024.jpg"/>
+  -->
+
+  <Sample isEnabled="true" Text="UPC - Book" FilePath="/Samples/Sample_Book_1.jpg"/>
+  <Sample isEnabled="true" Text="UPC - CD" FilePath="/Samples/Sample_CD.jpg"/>
+  <Sample isEnabled="true" Text="UPC - Movie" FilePath="/Samples/Sample_Blu-ray.jpg"/>
+  <Sample isEnabled="true" Text="UPC - Product" FilePath="/Samples/Sample_Product_2.jpg"/>
+
+  <Sample isEnabled="true" Text="QR Code - URL" FilePath="/Samples/Sample_Facebook_URL.jpg"/>
+  <Sample isEnabled="true" Text="QR Code - Text" FilePath="/Samples/Sample_Text.png"/>
+  <Sample isEnabled="true" Text="QR Code - Magazine Ad" FilePath="/Samples/Sample_Times-Ad.jpg"/>
+
+  <!-- Need to add special processing for these types -->
+  <Sample isEnabled="true" Text="QR Code - Email" FilePath="/Samples/Sample_Email.png"/>
+  <Sample isEnabled="true" Text="QR Code - SMS" FilePath="/Samples/Sample_SMS.png"/>
+  <Sample isEnabled="true" Text="QR Code - Wifi" FilePath="/Samples/Sample_Wifi_Network.png"/>
+  <Sample isEnabled="true" Text="QR Code - GeoLoc" FilePath="/Samples/Sample_Geo-Location.png"/>
+  
+  <!--ZXing Sample images from SVN at core\test\data\benchmark-->
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;QR Code - 1" FilePath="/Samples/qrcode-1.jpg"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;QR Code - 2" FilePath="/Samples/qrcode-2.jpg"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;QR Code - 3" FilePath="/Samples/qrcode-3.jpg"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;QR Code - 4" FilePath="/Samples/qrcode-4.jpg"/>
+  <!--Data Matrix barcodes not working --><Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Data Matrix - 1" FilePath="/Samples/datamatrix-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Data Matrix - 2" FilePath="/Samples/datamatrix-2.jpg"/>
+  
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;UPC-A" FilePath="/Samples/upca-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;EAN-13" FilePath="/Samples/ean13-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Code 39 - 1" FilePath="/Samples/code39-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Code 128 - 1" FilePath="/Samples/code128-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;ITF - 1" FilePath="/Samples/ITF-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Fail - 1" FilePath="/Samples/fail-1.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Fail - 2" FilePath="/Samples/fail-2.png"/>
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Fail - 3" FilePath="/Samples/fail-3.png"/>
+  <!--Doesn't fail... actually works :-/ -->
+  <Sample isEnabled="true" Text="ZXing Sample&#13;&#10;Win - 4" FilePath="/Samples/fail-4.jpg "/>
+
+</SampleImages> 

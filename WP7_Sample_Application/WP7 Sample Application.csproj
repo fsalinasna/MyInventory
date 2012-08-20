@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A21C8C90-D83C-40BD-8C8F-9480368590E1}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WP7_Sample_Application</RootNamespace>
+    <AssemblyName>WP7_Sample_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>WP7_Sample_Application.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>WP7_Sample_Application.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\SilverlightToolkitWP.4.2012.6.25\lib\sl3-wp\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Resource Include="Barcode.png" />
+    <Content Include="Samples\code128-1.png" />
+    <Content Include="Samples\code39-1.png" />
+    <Content Include="Samples\datamatrix-1.png" />
+    <Content Include="Samples\datamatrix-2.jpg" />
+    <Content Include="Samples\ean13-1.png" />
+    <Content Include="Samples\fail-1.png" />
+    <Content Include="Samples\fail-2.png" />
+    <Content Include="Samples\fail-3.png" />
+    <Content Include="Samples\fail-4.jpg" />
+    <Content Include="Samples\itf-1.png" />
+    <Content Include="Samples\pdf417-1.png" />
+    <Content Include="Samples\qrcode-1.jpg" />
+    <Content Include="Samples\qrcode-2.jpg" />
+    <Content Include="Samples\qrcode-3.jpg" />
+    <Content Include="Samples\qrcode-4.jpg" />
+    <Content Include="Samples\qrcode_blog.phrasememe.com.png" />
+    <Content Include="Samples\Sample_Blu-ray.jpg" />
+    <Content Include="Samples\Sample_Book_1.jpg" />
+    <Content Include="Samples\Sample_Book_2.jpg" />
+    <Content Include="Samples\Sample_CD.jpg" />
+    <Content Include="Samples\Sample_Email.png" />
+    <Content Include="Samples\Sample_Facebook_URL.jpg" />
+    <Content Include="Samples\Sample_Geo-Location.png" />
+    <Content Include="Samples\Sample_Phone_Number.png" />
+    <Content Include="Samples\Sample_Product_1.jpg" />
+    <Content Include="Samples\Sample_Product_2.jpg" />
+    <Content Include="Samples\Sample_SMS.png" />
+    <Content Include="Samples\Sample_Text.png" />
+    <Content Include="Samples\Sample_Times-Ad.jpg" />
+    <Content Include="Samples\Sample_Twitter_URL.png" />
+    <Content Include="Samples\Sample_Video_Game.jpg" />
+    <Content Include="Samples\Sample_Wifi_Network.png" />
+    <Content Include="Samples\upca-1.png" />
+    <Content Include="SampleImages.xml" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\silverlight\Silverlight ZXing Core.csproj">
+      <Project>{B9435655-C5DC-46F9-A4A3-CC214F8D6058}</Project>
+      <Name>Silverlight ZXing Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WP7_Barcode_Library\WP7 ZXing Barcode Library.csproj">
+      <Project>{44EA4D87-E635-4E54-963A-95C99BE8D7F8}</Project>
+      <Name>WP7 ZXing Barcode Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

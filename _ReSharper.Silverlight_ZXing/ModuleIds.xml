@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="A21C8C90-D83C-40BD-8C8F-9480368590E1" ModuleId="WP7 Sample Application" />
+  <Module PersistentId="44EA4D87-E635-4E54-963A-95C99BE8D7F8" ModuleId="WP7 ZXing Barcode Library" />
+  <Module PersistentId="B9435655-C5DC-46F9-A4A3-CC214F8D6058" ModuleId="Silverlight ZXing Core" />
+  <Module PersistentId="04C921EE-C6CF-47DD-90CB-38D1C007FA0D" ModuleId="PersonalInventory" />
+  <Module PersistentId="58BBEB23-4F3C-49EE-92F6-8594196761F1" ModuleId="CodeLab" />
+</Modules>

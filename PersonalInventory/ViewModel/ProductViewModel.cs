@@ -33,6 +33,12 @@ namespace PersonalInventory.ViewModel
             DatePurchased = DateTime.UtcNow;
         }
 
+        public ProductViewModel(Product product)
+        {
+            ImageUrl = product.ImageUrl;
+            ProductName = product.ProductName;
+        }
+
         public static decimal ConvertToPrice(SearchUpcItemInfo itemInfo)
         {
             decimal price;

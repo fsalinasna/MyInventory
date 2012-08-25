@@ -140,6 +140,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Images\dark\appbar.add.png" />
+    <Content Include="Images\dark\appbar.settings.png" />
     <Content Include="ServiceReferences.ClientConfig" />
     <None Include="Service References\UPCSearch\UPCSearch.wsdl" />
   </ItemGroup>
@@ -163,8 +165,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="appbar.barcode.png" />
-    <Resource Include="appbar.magnify.png" />
+    <Content Include="Images\dark\appbar.barcode.png" />
+    <Content Include="Images\dark\appbar.magnify.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -172,7 +174,9 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\UPCSearch\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\light\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

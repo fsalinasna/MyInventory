@@ -104,48 +104,6 @@ namespace PersonalInventory
             WP7BarcodeManager.ScanMode = BarcodeFormat.ALL_1D;
         }
 
-        /// <summary>
-        /// Loads the camera, lets the user take a picture, and then returns the result to a callback method.
-        /// </summary>
-        private void ScanClick(object sender, RoutedEventArgs e)
-        {
-            StartProgress();
-            WP7BarcodeManager.ScanBarcode(BarcodeResults);
-        }
-
-        private void SearchClick(object sender, RoutedEventArgs e)
-        {
-            string searchTerm = SearchBox.Text;
-
-            List<ProductListItemViewModel> productList;
-
-            try
-            {
-                using (var dc = new ProductsDataContext(ProductsDataContext.ConnectionString))
-                {
-                    productList = (from product in dc.Products
-                                   join purchase in dc.Purchases on product.Id equals purchase.ProductId
-                                   group purchase by new {product.Id, product.ProductName, product.ImageUrl}
-                                   into psummary
-                                   where psummary.Key.ProductName.Contains(searchTerm)
-                                   orderby psummary.Max(pur => pur.DatePurchased) descending
-                                   select
-                                       new ProductListItemViewModel(psummary.Key.Id, psummary.Key.ProductName,
-                                                                    psummary.Max(pur => pur.DatePurchased),
-                                                                    psummary.Key.ImageUrl,
-                                                                    psummary.Sum(pur => pur.Quantity))
-                                  ).ToList();
-                }
-            }
-            catch (Exception ex)
-            {
-                productList = new List<ProductListItemViewModel>();
-                txtResults.Text = ex.Message;
-            }
-
-            ProductList.ItemsSource = productList;
-        }
-
         private void ProductListSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listBox = sender as ListBox;
@@ -157,6 +115,55 @@ namespace PersonalInventory
                     NavigationService.Navigate(new Uri("/EditProduct.xaml?productid=" + productViewModel.Id,
                                                        UriKind.RelativeOrAbsolute));
             }
+        }
+
+        private void ApplicationBarSearchClick(object sender, EventArgs e)
+        {
+            SearchBox.Visibility = Visibility.Visible;
+            SearchBox.Focus();
+        }
+
+        /// <summary>
+        /// Loads the camera, lets the user take a picture, and then returns the result to a callback method.
+        /// </summary>
+        private void ApplicationBarScanButtonClick(object sender, EventArgs e)
+        {
+            StartProgress();
+            WP7BarcodeManager.ScanBarcode(BarcodeResults);
+        }
+
+        private void SearchBoxTextChanged(object sender, TextChangedEventArgs e)
+        {
+            string searchTerm = SearchBox.Text;
+
+            List<ProductListItemViewModel> productList;
+
+            try
+            {
+                using (var dc = new ProductsDataContext(ProductsDataContext.ConnectionString))
+                {
+                    productList = (from product in dc.Products
+                                   join purchase in dc.Purchases on product.Id equals purchase.ProductId
+                                   group purchase by new { product.Id, product.ProductName, product.ImageUrl }
+                                       into psummary
+                                       where psummary.Key.ProductName.Contains(searchTerm)
+                                       orderby psummary.Max(pur => pur.DatePurchased) descending
+                                       select
+                                           new ProductListItemViewModel(psummary.Key.Id, psummary.Key.ProductName,
+                                                                        psummary.Max(pur => pur.DatePurchased),
+                                                                        psummary.Key.ImageUrl,
+                                                                        psummary.Sum(pur => pur.Quantity))
+                                  ).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                productList = new List<ProductListItemViewModel>();
+                txtResults.Text = ex.Message;
+            }
+
+            ProductList.ItemsSource = productList;
+
         }
     }
 }

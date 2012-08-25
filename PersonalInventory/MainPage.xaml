@@ -6,21 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
     x:Class="PersonalInventory.MainPage"
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 
     <phone:PhoneApplicationPage.FontFamily>
         <StaticResource ResourceKey="PhoneFontFamilyNormal"/>
@@ -42,20 +30,9 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="MY INVENTORY" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBox x:Name="SearchBox" Margin="0,0,116,0" VerticalAlignment="Top" />
+            <TextBox x:Name="SearchBox" Margin="0,0,116,0" VerticalAlignment="Top" Visibility="Collapsed" TextChanged="SearchBoxTextChanged" />
         </StackPanel>
-        <Grid x:Name="ControlPanel" Grid.Row="1" >
-            <Button x:Name="Search" Height="72" VerticalAlignment="Top" Width="72" Margin="0,-100,59,0" HorizontalAlignment="Right" Click="SearchClick">
-                <Button.Background>
-                    <ImageBrush ImageSource="appbar.magnify.png"  />
-                </Button.Background>
-            </Button>
-            <Button x:Name="Scan" Height="72" Width="72" HorizontalAlignment="Right" Margin="0,-100,-2,0" VerticalAlignment="Top" Click="ScanClick">
-                <Button.Background>
-                    <ImageBrush ImageSource="appbar.barcode.png" Stretch="Fill"/>
-                </Button.Background>
-            </Button>
-        </Grid>
+
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
             <Grid x:Name="gridProductList" Margin="0" Height="540" VerticalAlignment="Top">
@@ -81,4 +58,15 @@
         </Grid>
     </Grid>
 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="\Images\dark\appbar.magnify.png" Text="Search" Click="ApplicationBarSearchClick"/>
+            <shell:ApplicationBarIconButton IconUri="\Images\dark\appbar.add.png" Text="Add"/>
+            <shell:ApplicationBarIconButton IconUri="\Images\dark\appbar.barcode.png" Text="Scan" Click="ApplicationBarScanButtonClick"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Settings"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

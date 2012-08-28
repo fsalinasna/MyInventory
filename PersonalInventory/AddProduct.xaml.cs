@@ -60,6 +60,7 @@ namespace PersonalInventory
                     //imgProductImage.Source = new BitmapImage(new Uri(_currentProduct.ImageUrl, UriKind.Absolute));
                     imgProductImage.Source = _currentImage;
                     btnAddImage.Visibility = Visibility.Collapsed;
+                    btnAddImage.Content = "";
                     imgProductImage.Visibility = Visibility.Visible;
                 }
 
@@ -234,5 +235,6 @@ namespace PersonalInventory
                 txtName.Text = ex.Message + Environment.NewLine + e.Error.Message + Environment.NewLine + e.OriginalFileName; 
             }
         }
+
     }
 }

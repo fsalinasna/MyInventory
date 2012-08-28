@@ -65,7 +65,7 @@
 
             <Button x:Name="btnAddImage" Content="Add Image" Margin="105,0,108,77" VerticalAlignment="Bottom" Click="AddImageClick" Height="223" Visibility="Collapsed" />
             
-            <Image x:Name="imgProductImage" Height="209" Margin="121,0,121,85" VerticalAlignment="Bottom" />
+            <Image x:Name="imgProductImage" Height="209" Margin="121,0,121,85" VerticalAlignment="Bottom" Tap="AddImageClick" />
 
             <Button x:Name="btnAddToInventory" Content="Add" Margin="66,0,239,0" VerticalAlignment="Bottom" Click="AddToInventoryClick" />
             <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Right" Margin="0,0,66,0" VerticalAlignment="Bottom" Click="CancelButtonClick" />

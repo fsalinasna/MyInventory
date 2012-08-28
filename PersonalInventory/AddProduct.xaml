@@ -31,20 +31,42 @@
                 <Run Text="Name:"/>
                     <LineBreak/>
                 <Run/></TextBlock>
-            <TextBox x:Name="txtName" Margin="8,45,8,0" TextWrapping="Wrap" Height="147" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtName" Margin="8,45,8,0" TextWrapping="Wrap" Height="120" VerticalAlignment="Top"/>
             
-            <TextBlock HorizontalAlignment="Left" Margin="23,212,0,0" TextWrapping="Wrap" Text="Price:" Width="69" FontSize="24" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtPrice" Margin="74,192,265,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-            
-            <TextBlock x:Name="txtCurrency" Margin="185,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" HorizontalAlignment="Left" Width="32" Height="52" />
+            <TextBlock HorizontalAlignment="Left" Margin="23,196,0,0" TextWrapping="Wrap" Text="Price:" Width="69" FontSize="24" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtPrice" Margin="74,176,265,0" TextWrapping="Wrap" VerticalAlignment="Top">
+                <TextBox.InputScope>
+                    <InputScope>
+                        <InputScopeName NameValue="CurrencyAmount" />
+                    </InputScope>
+                </TextBox.InputScope>
+            </TextBox>
 
-            <TextBlock Margin="235,212,113,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.028,0.641"/>
-            <TextBox x:Name="txtQuantity" HorizontalAlignment="Right" Margin="0,192,11,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+            <TextBlock x:Name="txtCurrency" Margin="185,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" HorizontalAlignment="Left" Width="32" Height="52" />
 
-            <TextBlock Margin="23,270,0,0" TextWrapping="Wrap" Text="Date:" FontSize="24" RenderTransformOrigin="0.512,0.593" VerticalAlignment="Top" HorizontalAlignment="Left" d:LayoutOverrides="VerticalAlignment"/>
-            <TextBox x:Name="txtDate" Margin="74,250,194,285" TextWrapping="Wrap" d:LayoutOverrides="Height"/>
+            <TextBlock Margin="235,196,113,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.028,0.641"/>
+
+            <TextBox x:Name="txtQuantity" HorizontalAlignment="Right" Margin="0,176,11,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top">
+                <TextBox.InputScope>
+                    <InputScope>
+                        <InputScopeName NameValue="Number" />
+                    </InputScope>
+                </TextBox.InputScope>
+            </TextBox>
+
+            <TextBlock Margin="23,257,0,0" TextWrapping="Wrap" Text="Date:" FontSize="24" RenderTransformOrigin="0.512,0.593" VerticalAlignment="Top" HorizontalAlignment="Left" d:LayoutOverrides="VerticalAlignment"/>
+            <TextBox x:Name="txtDate" Margin="74,237,194,298" TextWrapping="Wrap" d:LayoutOverrides="Height">
+                <TextBox.InputScope>
+                    <InputScope>
+                        <InputScopeName NameValue="Date" />
+                    </InputScope>
+                </TextBox.InputScope>
+            </TextBox>
+
+            <Button x:Name="btnAddImage" Content="Add Image" Margin="105,0,108,77" VerticalAlignment="Bottom" Click="AddImageClick" Height="223" Visibility="Collapsed" />
             
-            <Image x:Name="imgProductImage" Height="209" Margin="121,0,121,73" VerticalAlignment="Bottom"/>
+            <Image x:Name="imgProductImage" Height="209" Margin="121,0,121,85" VerticalAlignment="Bottom" />
+
             <Button x:Name="btnAddToInventory" Content="Add" Margin="66,0,239,0" VerticalAlignment="Bottom" Click="AddToInventoryClick" />
             <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Right" Margin="0,0,66,0" VerticalAlignment="Bottom" Click="CancelButtonClick" />
         </Grid>

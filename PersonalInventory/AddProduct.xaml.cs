@@ -4,6 +4,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using Microsoft.Phone;
+using Microsoft.Phone.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PersonalInventory.Model;
@@ -19,6 +21,9 @@ namespace PersonalInventory
         private string _scannedBarcode;
 
         private ProductViewModel _currentProduct;
+
+        private WriteableBitmap _currentImage;
+        private CameraCaptureTask _task;
 
         public AddProduct()
         {
@@ -38,6 +43,29 @@ namespace PersonalInventory
                 searchUpcClient.GetProductJSONCompleted += GetProductCompleted;
 
                 searchUpcClient.GetProductJSONAsync(_scannedBarcode, SEARCHUPC_ACCESS_TOKEN);
+                btnAddImage.Visibility = Visibility.Collapsed;
+                imgProductImage.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnAddToInventory.IsEnabled = true;
+
+                if (_currentProduct == null || string.IsNullOrEmpty(_currentProduct.ImageUrl))
+                {
+                    btnAddImage.Visibility = Visibility.Visible;
+                    imgProductImage.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    //imgProductImage.Source = new BitmapImage(new Uri(_currentProduct.ImageUrl, UriKind.Absolute));
+                    imgProductImage.Source = _currentImage;
+                    btnAddImage.Visibility = Visibility.Collapsed;
+                    imgProductImage.Visibility = Visibility.Visible;
+                }
+
+                txtQuantity.Text = "1";
+                txtCurrency.Text = ProductViewModel.GetCurrencySymbol("usd");
+                txtDate.Text = DateTime.Now.ToShortDateString();
             }
 
         }
@@ -69,7 +97,6 @@ namespace PersonalInventory
                 
                 imgProductImage.Source = new BitmapImage(new Uri(p.ImageUrl, UriKind.Absolute));
 
-                btnAddToInventory.IsEnabled = true;
             }
             else
             {
@@ -78,9 +105,12 @@ namespace PersonalInventory
                 // leave all controls blank, set imgProductImage to the default image
                 // to allow for manual entry.
             }
+
+            btnAddToInventory.IsEnabled = true;
+
         }
 
-        private void AddToInventoryClick(object sender, System.Windows.RoutedEventArgs e)
+        private void AddToInventoryClick(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(txtName.Text))
             {
@@ -145,13 +175,10 @@ namespace PersonalInventory
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
-
-
         protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
         {
-            PreserveFocusState(txtCurrency);
+            PreserveFocusState(txtName);
         }
-
 
         private void PreserveFocusState(FrameworkElement parent)
         {
@@ -178,6 +205,34 @@ namespace PersonalInventory
 
         }
 
+        private void AddImageClick(object sender, RoutedEventArgs e)
+        {
+            _task = new CameraCaptureTask();
+            _task.Completed += CaptureImageTaskCompleted;
+            _task.Show();
+        }
 
+        private void CaptureImageTaskCompleted(object sender, PhotoResult e)
+        {
+            try
+            {
+                if (e.TaskResult == TaskResult.OK)
+                {
+                    _currentImage = PictureDecoder.DecodeJpeg(e.ChosenPhoto);
+
+                    if (_currentProduct == null)
+                    {
+                        _currentProduct = new ProductViewModel();
+                    }
+
+                    _currentProduct.ImageUrl = e.OriginalFileName;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                txtName.Text = ex.Message + Environment.NewLine + e.Error.Message + Environment.NewLine + e.OriginalFileName; 
+            }
+        }
     }
 }

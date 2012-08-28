@@ -39,6 +39,10 @@ namespace PersonalInventory.ViewModel
             ProductName = product.ProductName;
         }
 
+        public ProductViewModel()
+        {
+        }
+
         public static decimal ConvertToPrice(SearchUpcItemInfo itemInfo)
         {
             decimal price;

@@ -85,6 +85,7 @@ namespace PersonalInventory
                 else
                 {
                     txtResults.Text = results.ErrorMessage;
+                    NavigationService.Navigate(new Uri("/AddProduct.xaml", UriKind.RelativeOrAbsolute));
                 }
             }
 
@@ -164,6 +165,11 @@ namespace PersonalInventory
 
             ProductList.ItemsSource = productList;
 
+        }
+
+        private void ApplicationBarAddButtonClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/AddProduct.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

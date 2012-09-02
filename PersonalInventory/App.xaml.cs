@@ -124,6 +124,10 @@ namespace PersonalInventory
             RootFrame = new PhoneApplicationFrame();
             RootFrame.Navigated += CompleteInitializePhoneApplication;
 
+            // Add UriMapper
+            var mapper = Resources["uriMapper"] as UriMapper;
+            RootFrame.UriMapper = mapper;
+
             // Handle navigation failures
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
 

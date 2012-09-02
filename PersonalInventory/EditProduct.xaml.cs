@@ -64,7 +64,7 @@ namespace PersonalInventory
          private void CancelButtonClick(object sender, RoutedEventArgs e)
          {
              // Navigate to main page.
-             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.RelativeOrAbsolute));
+             NavigationService.Navigate(new Uri("/Home", UriKind.RelativeOrAbsolute));
          }
     }
 }

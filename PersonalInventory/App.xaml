@@ -2,11 +2,18 @@
     x:Class="PersonalInventory.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Navigation;assembly=Microsoft.Phone"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
 
     <!--Application Resources-->
     <Application.Resources>
+        <navigation:UriMapper x:Name="uriMapper">
+            <navigation:UriMapping Uri="/AddProduct/{bc}" MappedUri="/AddProduct.xaml?barcode={bc}" />
+            <navigation:UriMapping Uri="/AddProduct" MappedUri="/AddProduct.xaml" />
+            <navigation:UriMapping Uri="/EditProduct/{id}" MappedUri="/EditProduct.xaml?productid={id}" />
+            <navigation:UriMapping Uri="/Home" MappedUri="/MainPage.xaml" />
+        </navigation:UriMapper>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

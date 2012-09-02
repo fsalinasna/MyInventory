@@ -23,6 +23,10 @@ namespace PersonalInventory
 
         private void MainPageLoaded(object sender, RoutedEventArgs e)
         {
+
+            WP7BarcodeManager.aStartProgress = StartProgress;
+            WP7BarcodeManager.ScanMode = BarcodeFormat.ALL_1D;
+
             List<ProductListItemViewModel> productList;
 
             try
@@ -60,7 +64,7 @@ namespace PersonalInventory
 
             if (Microsoft.Devices.Environment.DeviceType == Microsoft.Devices.DeviceType.Emulator)
             {
-                NavigationService.Navigate(new Uri("/AddProduct.xaml?barcode=" + "020356363307",
+                NavigationService.Navigate(new Uri("/AddProduct/" + "020356363307",
                                    UriKind.RelativeOrAbsolute));
             }
             else
@@ -72,20 +76,20 @@ namespace PersonalInventory
                     txtResults.Text = results.BarcodeText;
                     txtResults.Text += "  Processing...";
 
-                    NavigationService.Navigate(new Uri("/AddProduct.xaml?barcode=" + results.BarcodeText,
+                    NavigationService.Navigate(new Uri("/AddProduct/" + results.BarcodeText,
                                                        UriKind.RelativeOrAbsolute));
                 }
                 else if (results.State == CaptureState.Canceled)
                 {
                     txtResults.Text = "Cancelled";
-                    NavigationService.Navigate(new Uri("/AddProduct.xaml?barcode=" + "020356363307",
+                    NavigationService.Navigate(new Uri("/AddProduct/" + "020356363307",
                    UriKind.RelativeOrAbsolute));
 
                 }
                 else
                 {
                     txtResults.Text = results.ErrorMessage;
-                    NavigationService.Navigate(new Uri("/AddProduct.xaml", UriKind.RelativeOrAbsolute));
+                    NavigationService.Navigate(new Uri("/AddProduct/", UriKind.RelativeOrAbsolute));
                 }
             }
 
@@ -99,12 +103,6 @@ namespace PersonalInventory
         {
         }
 
-        private void PhoneApplicationPageLoaded(object sender, RoutedEventArgs e)
-        {
-            WP7BarcodeManager.aStartProgress = StartProgress;
-            WP7BarcodeManager.ScanMode = BarcodeFormat.ALL_1D;
-        }
-
         private void ProductListSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listBox = sender as ListBox;
@@ -113,7 +111,7 @@ namespace PersonalInventory
                 var productViewModel = listBox.SelectedItem as ProductListItemViewModel;
 
                 if (productViewModel != null)
-                    NavigationService.Navigate(new Uri("/EditProduct.xaml?productid=" + productViewModel.Id,
+                    NavigationService.Navigate(new Uri("/EditProduct/" + productViewModel.Id,
                                                        UriKind.RelativeOrAbsolute));
             }
         }
@@ -169,7 +167,7 @@ namespace PersonalInventory
 
         private void ApplicationBarAddButtonClick(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/AddProduct.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/AddProduct", UriKind.RelativeOrAbsolute));
         }
     }
 }
